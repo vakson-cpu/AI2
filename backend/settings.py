@@ -11,13 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import os 
-
-
-
-
-
-
+import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -33,7 +27,7 @@ SECRET_KEY = 'django-insecure-j0pkcy@2&$pal$j12uxu3bs0c!k2oe^ue__j(!rp2_2r_a3%87
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','vestak.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'vestak.herokuapp.com']
 
 
 # Application definition
@@ -46,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
-    'rest_framework',
     'corsheaders',
+    'rest_framework',
 
 ]
 
@@ -62,7 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-  
+
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
