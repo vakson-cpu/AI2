@@ -27,18 +27,18 @@ SECRET_KEY = 'django-insecure-j0pkcy@2&$pal$j12uxu3bs0c!k2oe^ue__j(!rp2_2r_a3%87
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'vestak.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://vestak.herokuapp.com', '*']
 
 CORS_ALLOW_HEADERS = [
-'accept',
-'accept-encoding',
-'authorization',
-'content-type',
-'dnt',
-'origin',
-'user-agent',
-'x-csrftoken',
-'x-requested-with',
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
 ]
 
 # Application definition
@@ -51,8 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
-    'corsheaders',
     'rest_framework',
+    'corsheaders',
+
 
 ]
 

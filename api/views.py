@@ -1,12 +1,6 @@
-from codecs import getwriter
-from glob import glob
+
 import math
 import json
-from pickle import FALSE
-from tabnanny import check
-from tkinter import W, Grid
-from webbrowser import get
-from xml.etree.ElementTree import PI
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.http import JsonResponse
@@ -890,8 +884,7 @@ def AlphaBetaHard(isMaximizing, i, j, depth, ALPHA, BETA):
 def main(request):
     if request.method == 'GET':
         return Response({
-            "name": "PPP",
-            "lastName": "UUU"
+            "OVO JE STRAANICA"
         })
     elif request.method == 'POST':
         try:
