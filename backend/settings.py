@@ -29,17 +29,16 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["https://vaksonsfreedom.000webhostapp.com",'localhost', '127.0.0.1', "https://vestak.herokuapp.com","vestak.herokuapp.com","https://vestak.herokuapp.com/api/getaj", "*"]
 
-# CORS_ALLOW_HEADERS = [
-#     'accept',
-#     'accept-encoding',
-#     'authorization',
-#     'content-type',
-#     'dnt',
-#     'origin',
-#     'user-agent',
-#     'x-csrftoken',
-#     'x-requested-with',
-# ]
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+CORS_ALLOW_HEADERS = "*"
 
 # Application definition
 
